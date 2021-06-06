@@ -1,0 +1,246 @@
+@media (max-width: 375px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 22px 0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .hambur__label {
+        display: flex;
+    }
+
+    .main {
+        margin-top: 64px;
+    }
+
+    .hero__content {
+        margin-top: 322px;
+        margin-bottom: 88px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1 {
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        letter-spacing: -0.714286px;
+    }
+
+    .hero__p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.234375px;
+    }
+
+    .inform {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .inform__h2 {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.571429px;
+    }
+
+    .inform__p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.234375px;
+    }
+
+    .inform__cards__wrapper {
+        margin-top: 56px;
+        flex-direction: column;
+    }
+
+    .inform-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inform-h3 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.357143px;
+    }
+
+    .inform-p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.234375px;
+    }
+
+    .inform-cards:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .articles {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+
+    .article__h2 {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.571429px;
+    }
+
+    .art__wrapper {
+        margin-top: 31px;
+        flex-direction: column;
+    }
+
+    .art-cards {
+        max-width: 327px;
+    }
+
+    .art-cards::before {
+        background-size: cover;
+    }
+
+    .art-cards:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .card-content {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .foo__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foo-blocks {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .svg__wrapper {
+        margin-top: 32px;
+    }
+
+
+    .foo__logo {
+        text-align: center;
+    }
+
+    /* .svg {
+        width: 24px;
+        height: 24px;
+    } */
+
+    .foo__block2 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .foo-nav {
+        margin: auto;
+        text-align: center;
+    }
+
+    .foo-item {
+        margin-bottom: 8px;
+    }
+
+    .foo-item__last {
+        margin-bottom: 0;
+    }
+
+    .foo__last__p {
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    /* ! """""""""""""  MODAL WINDOW  """"""""""""" */
+
+    .modal {
+        display: inline-block;
+        background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
+        width: 100%;
+        height: 100vh;
+        padding-top: 24px;
+
+        position: fixed;
+        top: 64px;
+        left: 0;
+
+        opacity: 0;
+        transition: .4s;
+        z-index: 99;
+    }
+
+    .modal__nav {
+        margin-top: 24px;
+        list-style: none;
+        padding: 32px 0;
+        max-width: 327px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 4px;
+        text-align: center;
+        transform: translateY(-200%);
+        transition: .3s;
+    }
+
+    .modal-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .modal-link {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        color: var(--color-dark);
+    }
+
+    .hambur__input:checked + .modal {
+        opacity: 1;
+    }
+
+    .hambur__input:checked + .modal .modal__nav {
+        transform: translateY(0);
+    }
+
+    /* ! _____________  MODAL WINDOW  _____________ */
+
+}

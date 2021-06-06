@@ -1,0 +1,522 @@
+:root {
+    --color-primary: #9597A5;
+    --color-gradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    --color-dark: #2D314D;
+    --color-bright: #30C88F;
+
+    --color-back-bright: #fafafa;
+    --color-back-dark: #F4F5F7;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* * """""""""""""""""""""""""""""   BEM   """""""""""""""""""""""""""" */
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn--wrapper {
+    width: 159px;
+    height: 44px;
+    background: #fff;
+    border-radius: 22px;
+}
+
+.btn {
+    padding: 8px 33px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    position: relative;
+}
+
+.btn:hover {
+    opacity: .4;
+}
+
+.btn:active {
+    opacity: .3;
+}
+
+.h {
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: var(--color-dark);
+}
+
+.p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: var(--color-primary);
+}
+
+.svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 13.33px;
+}
+
+.svg:hover {
+    color: var(--color-bright);
+}
+
+.twitter-svg {
+    width: 21px;
+    height: 18px;
+}
+
+.instagram-svg {
+    width: 21px;
+    margin-right: 0;
+}
+
+*:hover {
+    transition: .3s;
+}
+
+*:active {
+    transition: 0;
+}
+
+.modal {
+    display: none;
+}
+
+/* * _____________________________   BEM  _____________________________ */
+
+
+/* ! """""""""""""""""""""""""""""   HEADER   """""""""""""""""""""""""""" */
+
+.header {
+    background-color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    width: 138.76px;
+    height: 20px;
+}
+
+.nav__link {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-item {
+    margin-right: 30px;
+}
+
+.list-item:last-child {
+    margin-right: 0;
+}
+
+.list-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: var(--color-primary);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.list-link:hover {
+    border-bottom: 4px solid var(--color-bright);
+    color: var(--color-dark);
+}
+
+.list-link:active {
+    opacity: .4;
+}
+
+
+/* ! _____________________________   HEADER   ____________________________ */
+
+
+
+/* ? """"""""""""""""""""""""""""""   MAIN   """"""""""""""""""""""""""""" */
+
+.main {
+    z-index: 9998;
+}
+
+.hero__wrapper {
+    background: var(--color-back-bright);
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.hero__content {
+    max-width: 447px;
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+
+.h1 {
+    font-size: 56px;
+    letter-spacing: -1px;
+
+}
+
+.hero__p {
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.hero__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -80px;
+    z-index: 9997;
+}
+
+
+
+.inform {
+    background: var(--color-back-dark);
+    padding-top: 96px;
+    padding-bottom: 94px;
+}
+
+.inform__content {
+    max-width: 635px;
+}
+
+.inform__p {
+    margin-top: 16px;
+}
+
+.inform__cards__wrapper {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inform-cards {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.img-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper::before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.img__wrapper1::before {
+    background-image: url(../images/shape-1.svg);
+}
+
+.img__wrapper2::before {
+    background-image: url(../images/shape-2.svg);
+    width: 33px;
+    margin-left: 10px;
+}
+
+.img__wrapper3::before {
+    background-image: url(../images/shape-3.svg);
+}
+
+.img__wrapper4::before {
+    background-image: url(../images/shape-4.svg);
+}
+
+.inform-h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+}
+
+.inform-p {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+}
+
+.articles {
+    background: var(--color-back-bright);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.art__wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.art-cards {
+    max-width: 255px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.art-cards::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.art__card1::before {
+    background-image: url(../images/art-img1.png);
+}
+
+.art__card2::before {
+    background-image: url(../images/art-img2.png);
+}
+
+.art__card3::before {
+    background-image: url(../images/art-img3.png);
+}
+
+.art__card4::before {
+    background-image: url(../images/art-img4.png);
+}
+
+.card-content {
+    padding: 25px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.writer-p {
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: var(--color-primary);
+}
+
+.card-h2 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card-h2:hover {
+    color: var(--color-bright);
+    cursor: pointer;
+}
+
+.card-p {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+}
+
+
+
+/* ? ______________________________   MAIN   _____________________________ */
+
+
+
+/* TODO """""""""""""""""""""""""""   FOOTER   """"""""""""""""""""""""""" */
+
+.footer {
+    background: var(--color-dark);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.foo__content {
+    display: flex;
+}
+
+.foo-blocks {
+    height: 95px;
+}
+
+.foo__block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foo__logo {
+    width: 139px;
+    height: 20px;
+}
+
+.foo__block2 {
+    display: flex;
+    margin-left: 130px;
+}
+
+.foo-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foo__nav1 {
+    margin-right: 30px;
+}
+
+.foo-item {
+    width: 160px;
+}
+
+.foo-nav-link {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+}
+
+.foo-nav-link:hover {
+    color: var(--color-bright);
+}
+
+.foo__block3 {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.foo__last__p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/* TODO ___________________________   FOOTER   ___________________________ */
+
+/* * """""""""""""""""""""""""""""""   HAMBURGET  """"""""""""""""""""""""""""""" */
+
+.hambur__input {
+    display: none;
+}
+
+.hambur__input:checked~.hambur__label .hambur::before {
+    transform: rotate(45deg);
+    visibility: visible;
+    top: 0;
+    transition: .3s;
+
+}
+
+.hambur__input:checked~.hambur__label .hambur::after {
+    transform: rotate(-45deg);
+    visibility: visible;
+    top: 0;
+    transition: .3s;
+
+}
+
+.hambur__input:checked~.hambur__label .hambur {
+    visibility: hidden;
+    transition: 0s;
+
+}
+
+.hambur__label {
+    display: none;
+    /* display: flex; */
+}
+
+.hambur {
+    width: 24px;
+    height: 1px;
+    background: var(--color-dark);
+    display: inline-block;
+    position: relative;
+}
+
+.hambur::before,
+.hambur::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--color-dark);
+
+    position: absolute;
+}
+
+.hambur:before {
+    top: -4px;
+    left: 0;
+}
+
+.hambur::after {
+    top: 4px;
+    left: 0;
+}
+
+/* * _______________________________   HAMBURGET  _______________________________ */
